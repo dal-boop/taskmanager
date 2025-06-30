@@ -115,7 +115,7 @@ public class AddTaskActivity extends AppCompatActivity {
 
             if (valid) {
                 // Note: DBHelper.addTask currently ignores 'list'
-                db.addTask(task, desc, due);
+                db.addTask(task, desc, due, list);
                 setResult(RESULT_OK);
                 finish();
             }
